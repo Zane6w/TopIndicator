@@ -18,9 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupIndicator()
-        
-//        let statusBar = UIApplication.shared.statusBarOrientation
-        
+                
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.orientationChanged), name: Notification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
         
     }
